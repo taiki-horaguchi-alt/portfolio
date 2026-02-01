@@ -25,7 +25,7 @@ const projects = [
     description:
       "競合店のチラシ相場を自動収集・分析するSaaS型BIツール。マルチテナント設計によるデータ分離と、4P分析に基づくマーケティング戦略支援機能を備えた高度な競合分析プラットフォーム。",
     tags: ["SaaS Architecture", "BI Tool", "Market Analysis", "System Design"],
-    href: "#",
+    href: "/projects/market-price",
   },
   {
     title: "Chefs Market Platform",
@@ -46,7 +46,7 @@ const projects = [
     description:
       "フリマアプリ出品時の画像をAIが解析し、「売れる写真」かどうかを判定するツール。構図・明るさ・情報の視認性をスコアリングし、高値での売却をサポートする個人開発ツール。",
     tags: ["Python", "OpenCV", "Machine Learning", "Automation"],
-    href: "#",
+    href: "/projects/mercari-assistant",
   },
   {
     title: "Personal OS \"Taiki\"",

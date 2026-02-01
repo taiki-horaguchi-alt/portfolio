@@ -7,8 +7,6 @@ import {
   Brain,
   Camera,
   ChefHat,
-  Database,
-  ExternalLink,
   Github,
   LineChart,
   Receipt,
