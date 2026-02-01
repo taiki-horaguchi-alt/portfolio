@@ -45,7 +45,7 @@ const solutions = [
   {
     icon: Store,
     title: "既存流通網の活用",
-    description: "北海道みどり流通の市場インフラを活用した確実な配送。",
+    description: "地域の流通パートナーの市場インフラを活用した確実な配送。",
   },
   {
     icon: Users,
@@ -173,7 +173,7 @@ export default function ChefsMarketPage() {
                   {/* Distribution Hub */}
                   <div className="bg-navy-700/50 rounded-xl p-4 text-center border border-navy-600">
                     <Truck className="w-8 h-8 text-fresh-400 mx-auto mb-2" />
-                    <span className="text-white font-medium">北海道みどり流通</span>
+                    <span className="text-white font-medium">地域流通パートナー</span>
                     <p className="text-navy-400 text-xs mt-1">既存物流インフラ活用</p>
                   </div>
 
@@ -338,7 +338,7 @@ export default function ChefsMarketPage() {
               {[
                 "LINE公式アカウントで受注（アプリ開発不要）",
                 "既存の物流網を活用（配送インフラ構築不要）",
-                "北海道みどり流通との協業で信頼性を担保",
+                "地域流通パートナーとの協業で信頼性を担保",
                 "50店舗からスタートし、PMFを検証",
               ].map((item, index) => (
                 <motion.div
