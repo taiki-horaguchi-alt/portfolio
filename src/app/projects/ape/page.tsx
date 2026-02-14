@@ -8,6 +8,7 @@ import {
   Calculator,
   Database,
   ExternalLink,
+  FileText,
   Github,
   Leaf,
   LineChart,
@@ -106,16 +107,39 @@ export default function APEProjectPage() {
 
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4">
-                <Link href="https://github.com/horaguchi/ape" target="_blank">
-                  <Button variant="secondary" size="md">
-                    <Github className="w-5 h-5 mr-2" />
-                    View Source
-                  </Button>
-                </Link>
-                <Link href="https://ape-demo.streamlit.app" target="_blank">
+                {/* View Source - Conditional Rendering */}
+                {/* TODO: Set this variable to the repository URL when available. If undefined/null, "Coming Soon" will be displayed. */}
+                {(() => {
+                  const sourceUrl = "https://github.com/horaguchi/ape"; // Set to null or undefined to show "Coming Soon"
+                  
+                  return sourceUrl ? (
+                    <Link href={sourceUrl} target="_blank">
+                      <Button variant="secondary" size="md">
+                        <Github className="w-5 h-5 mr-2" />
+                        View Source
+                      </Button>
+                    </Link>
+                  ) : (
+                    <Button variant="secondary" size="md" disabled className="opacity-60 cursor-not-allowed">
+                      <Github className="w-5 h-5 mr-2" />
+                      Coming Soon
+                    </Button>
+                  );
+                })()}
+
+                {/* Live Demo - Updated to PDF */}
+                <Link href="/documents/ape_demo_images.pdf" target="_blank" rel="noopener noreferrer">
                   <Button variant="primary" size="md">
                     <ExternalLink className="w-5 h-5 mr-2" />
                     Live Demo
+                  </Button>
+                </Link>
+
+                {/* View Slides - New Button */}
+                <Link href="/documents/ape_slides.pdf" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="md">
+                    <FileText className="w-5 h-5 mr-2" />
+                    View Slides
                   </Button>
                 </Link>
               </div>
