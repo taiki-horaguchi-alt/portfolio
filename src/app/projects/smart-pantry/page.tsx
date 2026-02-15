@@ -106,7 +106,7 @@ export default function SmartPantryPage() {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <Link href="https://github.com/horaguchi/smart-pantry" target="_blank">
+                <Link href="https://github.com/taiki-horaguchi-alt/smart-pantry-tracker" target="_blank">
                   <Button variant="secondary" size="md">
                     <Github className="w-5 h-5 mr-2" />
                     View Source
